@@ -1,3 +1,33 @@
+### Install
+Run `git clone https://github.com/lexaboss/f4u-test-assignment.git .`   
+Run composer install
+
+### Usage
+Database contains 3 clients with IDs:
+- `e7a2d6bc-7643-11ea-bc55-0242ac130003`
+- `e7a2d91e-7643-11ea-bc55-0242ac130003`
+- `e7a2da18-7643-11ea-bc55-0242ac130003`
+
+To get client shipping addresses list run:   
+`make get <client-id>`   
+
+To add shipping address to client run:   
+`make add <client-id>`   
+
+To update client shipping address run:   
+`make update <client-id>`   
+
+To remove client shipping address run:   
+`make remove <client-id>`   
+
+To run PHPUnit test:   
+`make test`
+   
+Run for help:   
+`make help`   
+
+
+### User story
 Let's say, in our system we have two models "client" and "shipping address". Let's assume that we already have some existing (registered) clients in our storage. Let's do this simple and assume that our clients have only three properties ID, firstname and lastname.
 
 Client can have several different shipping addresses, but max number is 3. One of them is a default address, so when client adds the first address, it becomes default. Client can change a default address any time.
@@ -16,3 +46,4 @@ Requirements:
 - Use plain PHP (no frameworks).
 
 Fork your own copy of eglobal-it/f4u-test-assignment and share the result with us.
+

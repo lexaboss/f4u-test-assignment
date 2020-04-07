@@ -1,0 +1,22 @@
+{
+    "name": "eglobal/f4u",
+    "type": "project",
+    "description": "f4u test",
+    "license": "proprietary",
+    "require": {
+        "php": ">=7.4.0",
+        "ext-json": "*",
+        "jms/serializer": "^3.6",
+        "phpunit/phpunit": "^9.1",
+        "spatie/valuestore": "^1.2",
+        "symfony/serializer-pack": "^1.0",
+        "vlucas/phpdotenv": "^4.1"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": { "": "src/" }
+    },
+    "minimum-stability": "stable"
+}
